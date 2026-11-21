@@ -4,7 +4,7 @@ Windows 单文件转换工具：将 SILK V3 语音转换为 MP3、WAV、OGG 或 
 
 ## 使用
 
-下载仓库中的 `SilkConverter.exe`，双击运行，添加音频并选择输出格式，点击「开始转换」。结果保存在原文件旁；已有同名输出不会覆盖。也支持 `SilkConverter.exe "输入文件.silk" mp3`，成功退出码为 0，失败为 1。
+从 [Releases](https://github.com/qia7767/silk-converter-windows/releases/latest) 下载 `SilkConverter.exe`，双击运行，添加音频并选择输出格式，点击「开始转换」。结果保存在原文件旁；已有同名输出不会覆盖。也支持 `SilkConverter.exe "输入文件.silk" mp3`，成功退出码为 0，失败为 1。
 
 仅需一个 EXE；SILK 解码器与 FFmpeg 已嵌入其中，运行转换时会释放到当前用户的临时文件夹并在完成后尝试清理。需要 64 位 Windows 10 或更高版本及 .NET Framework 4.x。程序未签名，安全软件仍有可能误报。
 
