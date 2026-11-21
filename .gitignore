@@ -1,0 +1,8 @@
+upstream/
+text-silk/
+ffmpeg-9.1-essentials_build/
+ffmpeg-9.1-essentials.7z
+ffmpeg.exe
+decoder.exe
+*.gz
+README-使用说明.md
