@@ -1,12 +1,20 @@
 # SILK 音频转换器
 
-Windows 单文件转换工具：将 SILK V3 语音转换为 MP3、WAV、OGG 或 FLAC。支持拖入多个文件和添加文件夹（仅处理文件夹内的文件，不递归）。
+SILK V3 语音转换工具，可输出 MP3、WAV、OGG 或 FLAC。支持拖入多个文件和添加文件夹（仅处理文件夹内的文件，不递归）。
 
 ## 使用
 
 从 [Releases](https://github.com/qia7767/silk-converter/releases/latest) 下载 `SilkConverter.exe`，双击运行，添加音频并选择输出格式，点击「开始转换」。结果保存在原文件旁；已有同名输出不会覆盖。也支持 `SilkConverter.exe "输入文件.silk" mp3`，成功退出码为 0，失败为 1。
 
 仅需一个 EXE；SILK 解码器与 FFmpeg 已嵌入其中，运行转换时会释放到当前用户的临时文件夹并在完成后尝试清理。需要 64 位 Windows 10 或更高版本及 .NET Framework 4.x。程序未签名，安全软件仍有可能误报。
+
+## Linux（Arch x86-64）
+
+Linux 版提供 GTK 3 界面，支持选择多个文件、选择文件夹及拖入文件或文件夹；文件夹仅处理直接包含的文件。输出格式为 MP3、WAV、OGG、FLAC，结果保存在原文件旁，不覆盖同名文件。
+
+从 [Releases](https://github.com/qia7767/silk-converter/releases/latest) 下载 `silk-converter-linux-x86_64.tar.gz`。也可在 Arch 上运行 `sh linux/build.sh` 构建，再运行 `sh linux/package.sh` 生成压缩包。解压后运行 `portable/silk-converter`，也可使用 `portable/silk-converter 输入文件.silk mp3`。构建需要 GCC、pkg-config、GTK 3 开发文件及 FFmpeg。
+
+目录包包含 FFmpeg 和编译时检测到的共享库，但仍依赖兼容的系统 glibc、Linux 内核、图形会话及显卡驱动。它在 Arch x86-64 上构建和测试，尚未验证其他发行版。构建环境使用 glibc 2.44，旧版发行版可能不兼容。依赖清单、许可证及源码信息位于压缩包内的 `licenses` 目录。
 
 ## 重新编译
 

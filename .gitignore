@@ -7,3 +7,8 @@ decoder.exe
 *.gz
 README-使用说明.md
 SilkConverter.exe
+
+linux/build/
+linux/portable/
+linux/portable-test/
+linux/*.tar.gz
