@@ -16,6 +16,10 @@ Windows 单文件转换工具：将 SILK V3 语音转换为 MP3、WAV、OGG 或 
 
 构建脚本先编译 SILK C 解码器，再将解码器和 FFmpeg 压缩嵌入 C# 程序。`ffmpeg.exe`、`decoder.exe` 和中间 `.gz` 文件无需随成品分发。
 
+## 致谢
+
+感谢 [kn007/silk-v3-decoder](https://github.com/kn007/silk-v3-decoder) 的作者及贡献者。本项目基于该项目提供的 SILK 解码源码开发，感谢他们的开源分享。
+
 ## 来源与许可
 
 - SILK SDK 源码来自 [kn007/silk-v3-decoder](https://github.com/kn007/silk-v3-decoder)，提交 `507be6bca8ce1fb977a061481f1d79e8c610e309`；保留在 `vendor/silk`，原仓库许可见 `vendor/UPSTREAM-LICENSE.txt`，SDK 本身的许可声明见各源码文件。
