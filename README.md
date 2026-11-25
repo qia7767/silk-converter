@@ -31,5 +31,5 @@ Linux 版提供 GTK 3 界面，支持选择多个文件、选择文件夹及拖�
 ## 来源与许可
 
 - SILK SDK 源码来自 [kn007/silk-v3-decoder](https://github.com/kn007/silk-v3-decoder)，提交 `507be6bca8ce1fb977a061481f1d79e8c610e309`；保留在 `vendor/silk`，原仓库许可见 `vendor/UPSTREAM-LICENSE.txt`，SDK 本身的许可声明见各源码文件。
-- 内嵌 FFmpeg 9.1 Essentials 为 Gyan 构建，按 GPL v3 分发。许可文本见 [FFMPEG-LICENSE.txt](FFMPEG-LICENSE.txt)，构建配置和对应源码链接见 [FFMPEG-README.txt](FFMPEG-README.txt)。
+- 内嵌 FFmpeg 9.1 Essentials 为 Gyan 构建，按 GPL v3 分发。许可文本见 [LICENSE](LICENSE)，构建配置和对应源码链接见 [FFMPEG-README.txt](FFMPEG-README.txt)。
 - 本项目新增代码按 GPL v3 分发，见 [LICENSE](LICENSE)。
